@@ -41,10 +41,13 @@ As mentioned in the Introduction, the service simply returns a clone of the isMo
 See [isMobile](https://github.com/kaimallea/isMobile), for details and reference.
 
 ```js
+// Add angular-ismobile module to your own module
+angule.module('myApp', ['ismobile']);
+
 // Inside a config-block, you inject the provider
 angular.module('myApp').config(['$routeProvider', 'isMobileProvider',
-	function ($routeProvider, isMobileProvider) {
-		if (isMobileProvider.phone) {
+	function ($routeProvider, isMobile) {
+		if (isMobile.phone) {
 			$location.path('/mobile');
 		}
 
