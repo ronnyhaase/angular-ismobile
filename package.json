@@ -1,0 +1,40 @@
+{
+  "name": "angular-ismobile",
+  "version": "1.0.0",
+  "description": "A Angular wrapper provider-service for isMobile (https://github.com/kaimallea/isMobile)",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "grunt",
+    "test": "grunt test"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "mobile",
+    "device",
+    "useragent",
+    "ismobile"
+  ],
+  "author": "Ronny Haase <ronhaase@gmail.com>",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "angular": ">= 1.2.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9",
+    "chai": "^3.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.12.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-karma": "^0.12.1",
+    "grunt-preprocess": "^5.0.1",
+    "ismobilejs": "0.3.9",
+    "karma": "^0.13.19",
+    "karma-mocha": "^0.2.1",
+    "karma-mocha-reporter": "^1.1.5",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "load-grunt-tasks": "^3.4.0",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19"
+  }
+}
