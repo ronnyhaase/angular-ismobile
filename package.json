@@ -1,6 +1,6 @@
 {
   "name": "angular-ismobile",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Angular wrapper provider-service for isMobile (https://github.com/kaimallea/isMobile)",
   "main": "index.js",
   "scripts": {
