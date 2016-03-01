@@ -1,4 +1,7 @@
 # angular-ismobile
+
+[![Travis branch](https://img.shields.io/travis/ronnyhaase/angular-ismobile/master.svg)]()
+
 A Angular wrapper provider-service for isMobile (https://github.com/kaimallea/isMobile).
 
 By Ronny Haase, 2016. Licensed under [CC0 1.0 Universal (CC0 1.0)](http://creativecommons.org/publicdomain/zero/1.0/).
@@ -63,7 +66,7 @@ angular.module('myApp').controller('someController', ['isMobile', function(isMob
 	if (isMobile.phone) {
 		// ...
 	}
-}];
+}]);
 ```
 
 ## Contributing
