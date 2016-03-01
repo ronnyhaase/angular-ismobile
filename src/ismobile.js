@@ -15,7 +15,7 @@
 	angular.module('ismobile').provider('isMobile', ['$windowProvider', function IsMobileProvider($windowProvider) {
 		var _window = $windowProvider.$get();
 
-		angular.merge(this, _window.isMobile);
+		angular.extend(this, _window.isMobile);
 
 		this.$get = [function isMobileFactory() {
 			return angular.copy(_window.isMobile);
