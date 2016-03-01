@@ -19,9 +19,9 @@ describe('angular-ismobile', function () {
 				service = isMobile;
 			}));
 
-			it('should be injected and have .apple.phone as a minimum', function () {
+			it('should be injected and deep equal the "official" isMobile', function () {
 				expect(service).to.not.be.undefined;
-				expect(service.apple.phone).to.exist;
+				expect(service).to.deep.equal(window.isMobile);
 			});
 		});
 
@@ -38,9 +38,15 @@ describe('angular-ismobile', function () {
 				inject();
 			});
 
-			it('should be injected and have .apple.phone as a minimum', function () {
+			it('should be injected and deep equal the "official" isMobile', function () {
+				var pclone;
+
 				expect(provider).to.not.be.undefined;
-				expect(provider.apple.phone).to.exist;
+
+				pclone = angular.extend({}, provider);
+				// Otherwise a provider won't equal
+				delete pclone.$get;
+				expect(pclone).to.deep.equal(window.isMobile);
 			});
 		});
 	});

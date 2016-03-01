@@ -9,6 +9,8 @@ module.exports = function(config) {
 			'node_modules/angular-mocks/angular-mocks.js',
 			'node_modules/chai/chai.js',
 
+			'node_modules/ismobilejs/isMobile.js',
+
 			'dist/angular-ismobile.js',
 
 			'tests/**/*.spec.js'
