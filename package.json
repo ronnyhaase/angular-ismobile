@@ -16,6 +16,12 @@
     "ismobile"
   ],
   "author": "Ronny Haase <ronhaase@gmail.com>",
+  "contributors": [
+    {
+      "name": "Andrei Gheorghiu",
+      "email": "andrei.gheorghiu@evolution.ro"
+    }
+  ],
   "license": "CC0-1.0",
   "dependencies": {
     "angular": ">= 1.2.0"
@@ -24,6 +30,7 @@
     "angular-mocks": "^1.4.9",
     "chai": "^3.4.1",
     "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-contrib-jshint": "^0.12.0",
     "grunt-contrib-uglify": "^0.11.0",
     "grunt-karma": "^0.12.1",
